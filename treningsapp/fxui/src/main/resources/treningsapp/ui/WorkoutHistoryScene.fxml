@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="sceneVBox" prefHeight="607.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="treningsapp.ui.WorkoutHistorySceneController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="560.0" prefWidth="1218.0" style="-fx-background-color: #007BFF;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBack" prefHeight="19.0" prefWidth="52.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="39.0" prefHeight="37.0" prefWidth="250.0" text="WORKOUT HISTORY">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="workoutHistoryScrollPane" layoutX="20.0" layoutY="109.0" prefHeight="402.0" prefWidth="239.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="237.0" />
+               </content>
+            </ScrollPane>
+            <Button fx:id="saveWorkoutButton" layoutX="95.0" layoutY="568.0" mnemonicParsing="false" onAction="#handleSaveWorkout" text="Save Workout" visible="false" />
+            <TextField fx:id="workoutNameText" alignment="CENTER" layoutX="66.0" layoutY="536.0" promptText="Enter workout name" />
+            <Label fx:id="workoutSavedLabel" alignment="CENTER" layoutX="46.0" layoutY="518.0" prefHeight="62.0" prefWidth="187.0" text="Workout saved!" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

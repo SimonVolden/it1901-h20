@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="607.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="treningsapp.ui.MainSceneController">
+    <fx:define>
+        <String fx:id="endpointUri" fx:value="http://localhost:8999/treningsapp/"/>
+    </fx:define>
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="560.0" prefWidth="1218.0" style="-fx-background-color: #007BFF;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="trackWorkoutButton" layoutX="30.0" layoutY="52.0" mnemonicParsing="false" onAction="#handleTrackWorkout" prefHeight="64.0" prefWidth="221.0" text="Track a workout">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="workoutHistoryButton" layoutX="30.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleWorkoutHistory" prefHeight="64.0" prefWidth="221.0" text="Workout history">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="savedWorkoutsButton" layoutX="30.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleSavedWorkouts" prefHeight="64.0" prefWidth="221.0" text="Saved workouts">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="findWorkoutButton" layoutX="30.0" layoutY="467.0" mnemonicParsing="false" onAction="#handleFindWorkouts" prefHeight="64.0" prefWidth="221.0" text="Find a workout WIP">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: sdk use java 14.0.2.j9-adpt && mvn install:install-file -Dfile=treningsapp/libs/charm-6.0.5.jar -DpomFile=treningsapp/pom.xml && mvn install:install-file -Dfile=treningsapp/libs/charm-glisten-6.0.5.jar -DpomFile=treningsapp/pom.xml 
+    command: cd treningsapp
+
+ports:
+  # used by virtual desktop and vnc, supports JavaFX
+  - port: 6080

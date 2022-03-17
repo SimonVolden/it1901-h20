@@ -1,0 +1,1 @@
+{"name":"Program1","workouts":[{"name":"Trening1","isSaved":true,"exercises":[{"name":"Benkpress","sets":[{"repetition":1,"weight":1.5},{"repetition":2,"weight":2.0}]}]},{"name":"Trening2","isSaved":false,"exercises":[{"name":"Knebøy","sets":[{"repetition":2,"weight":2.0},{"repetition":1,"weight":1.5}]}]}]}
